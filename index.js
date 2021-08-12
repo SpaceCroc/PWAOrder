@@ -16,9 +16,10 @@ module.exports = class extends Page {
             sResult += `<form name="orderForm">
             <h2>Korean Ramyun</h2>
             <p><img src="img/ramyun.png" alt="Summer supper"</p>
-            <!-- <form action="https://serene-taiga-04277.herokuapp.com/payment" method="post"> -->
+            <!-- <form action="https://mobile-ramen-order.herokuapp.com/payment" method="post"> -->
             <input type="hidden" name="title" value="Korean Ramen" />
             <input type="hidden" name="price" id="priceForm" value="NA" />
+            </form>
             <p><b>Choose your meat</b></p>
             <label><input type="radio" name="meat" value="vegetarian"> Vegetarian</label>&nbsp;
             <label><input type="radio" name="meat" value="beef"> Beef</label>&nbsp;
@@ -37,7 +38,6 @@ module.exports = class extends Page {
             <label><input type="checkbox" name="drink" value="coke"> Coke</label>&nbsp;<br><br>
 
             <input type="tel" id="phoneInput" placeholder="enter your number" name="telephone"/>
-            </form>
             <button id="orderBtn">Order now</button>
             `;
         // });
