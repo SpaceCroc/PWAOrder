@@ -24,7 +24,7 @@ const Page = require("./_layout/Default");
 
 module.exports = class extends Page {
     constructor(){
-        super({title:"Home", sName:"Richard Hildred"});
+        super({title:"Kim's Ramen", sName:"Sungsoo Kim"});
     }
     render(sPage) {
         return `

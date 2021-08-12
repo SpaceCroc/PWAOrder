@@ -55,6 +55,10 @@ let meatPriceObj = {
           sRadish = "radish";
         }
       });
+      if ($("#phoneInput").val().length < 1) {
+        alert("please enter your phone number");
+        return;
+      }
       console.log(getPrice(meat, kimchi, sRadish, drink));
       $("#priceForm").val(getPrice(meat, kimchi, sRadish, drink));
       /*<form action="https://serene-taiga-04277.herokuapp.com/payment" method="post"> -->
