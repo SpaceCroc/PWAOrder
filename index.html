@@ -22,7 +22,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=".">Portfolio of Richard Hildred</a>
+            <a class="navbar-brand" href=".">Portfolio of Kim</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -34,31 +34,37 @@
 </nav>
         
         <main>
-    <h1>Upcoming Popup Meals</h1>
-            <h2>Summer supper</h2>
-            <p><img src="https://live.staticflickr.com/65535/49996549823_86cf9c8b55_c_d.jpg" alt="Summer supper"</p>
-            <p>Fish, new potatoes, leafy green vegetable</p>
-            <form action="https://serene-taiga-04277.herokuapp.com/payment" method="post">
-            <input type="hidden" name="title" value="Summer supper" />
-            <input type="hidden" name="price" value="21" />
-            <input type="tel" placeholder="enter your number" name="telephone"/>
-            <button type="submit">Order now</button>
+    <h1>Upcoming Popup Meals</h1><form name="orderForm">
+            <h2>Korean Ramyun</h2>
+            <p><img src="img/ramyun.png" alt="Summer supper"</p>
+            <!-- <form action="https://serene-taiga-04277.herokuapp.com/payment" method="post"> -->
+            <input type="hidden" name="title" value="Korean Ramen" />
+            <input type="hidden" name="price" id="priceForm" value="NA" />
+            <p><b>Choose your meat</b></p>
+            <label><input type="radio" name="meat" value="vegetarian"> Vegetarian</label>&nbsp;
+            <label><input type="radio" name="meat" value="beef"> Beef</label>&nbsp;
+            <label><input type="radio" name="meat" value="pork"> Pork</label>&nbsp;
+            <label><input type="radio" name="meat" value="chicken"> Chicken</label>&nbsp;<br><br>
+            <p><b>Choose spiciness level</b></p>
+            <label><input type="radio" name="spicy" value="1"> 1</label>&nbsp;
+            <label><input type="radio" name="spicy" value="2"> 2</label>&nbsp;
+            <label><input type="radio" name="spicy" value="3"> 3</label>&nbsp;
+            <label><input type="radio" name="spicy" value="4"> 4</label>&nbsp;
+            <label><input type="radio" name="spicy" value="5"> 5</label>&nbsp;<br><br>
+            <p><b>Side</b></p>
+            <label><input type="checkbox" name="side" value="kimchi"> Kimchi</label>&nbsp;
+            <label><input type="checkbox" name="side" value="sRadish"> Sweet Radish</label>&nbsp;<br><br>
+            <p><b>Drink</b></p>
+            <label><input type="checkbox" name="drink" value="coke"> Coke</label>&nbsp;<br><br>
+
+            <input type="tel" id="phoneInput" placeholder="enter your number" name="telephone"/>
             </form>
-            
-            <h2>chicken dinner</h2>
-            <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Roasted_Chicken_Dinner_Plate%2C_Broccoli%2C_Stuffing%2C_Potatoes%2C_Demi_Glace.jpg/1024px-Roasted_Chicken_Dinner_Plate%2C_Broccoli%2C_Stuffing%2C_Potatoes%2C_Demi_Glace.jpg" alt="chicken dinner"</p>
-            <p>really my favourite</p>
-            <form action="https://serene-taiga-04277.herokuapp.com/payment" method="post">
-            <input type="hidden" name="title" value="chicken dinner" />
-            <input type="hidden" name="price" value="21" />
-            <input type="tel" placeholder="enter your number" name="telephone"/>
-            <button type="submit">Order now</button>
-            </form>
+            <button id="orderBtn">Order now</button>
             
     </main>
     
 <footer>
-    &copy; <script>document.write(new Date().getFullYear())</script> Richard Hildred
+    &copy; <script>document.write(new Date().getFullYear())</script> Kim
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
