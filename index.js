@@ -19,6 +19,7 @@ module.exports = class extends Page {
             <!-- <form action="https://mobile-ramen-order.herokuapp.com/payment" method="post"> -->
             <input type="hidden" name="title" value="Korean Ramen" />
             <input type="hidden" name="price" id="priceForm" value="NA" />
+            <input type="tel" id="phoneInput" placeholder="enter your number" name="telephone"/>
             </form>
             <p><b>Choose your meat</b></p>
             <label><input type="radio" name="meat" value="vegetarian"> Vegetarian</label>&nbsp;
@@ -36,8 +37,6 @@ module.exports = class extends Page {
             <label><input type="checkbox" name="side" value="sRadish"> Sweet Radish</label>&nbsp;<br><br>
             <p><b>Drink</b></p>
             <label><input type="checkbox" name="drink" value="coke"> Coke</label>&nbsp;<br><br>
-
-            <input type="tel" id="phoneInput" placeholder="enter your number" name="telephone"/>
             <button id="orderBtn">Order now</button>
             `;
         // });
