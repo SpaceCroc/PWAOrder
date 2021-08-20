@@ -7,7 +7,7 @@ module.exports = class extends Page{
     render(){
         return `
 <footer>
-    &copy; <script>document.write(new Date().getFullYear())</script> ${this.sName}
+    &copy; <script>document.write(new Date().getFullYear())</script> Sungsoo Kim
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>

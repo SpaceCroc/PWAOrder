@@ -8,7 +8,8 @@ With [live server](https://marketplace.visualstudio.com/items?itemName=ritwickde
 
 ```
 npm install
-npm start
+SB_CLIENT_ID=<put_in_your_client_id> npm start
+SB_CLIENT_ID=AZFzD2xDfNYkD4eyY0IzeC0ZhgKW7BtgEiht8Gkq7kDalfynGswnLD1rJGpV-77pSzOQywrfdriNpGv3 npm start
 
 ```
 
@@ -24,7 +25,7 @@ const Page = require("./_layout/Default");
 
 module.exports = class extends Page {
     constructor(){
-        super({title:"Kim's Ramen", sName:"Sungsoo Kim"});
+        super({title:"Home", sName:"Richard Hildred"});
     }
     render(sPage) {
         return `
